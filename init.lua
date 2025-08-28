@@ -798,7 +798,9 @@ require('lazy').setup({
 
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
+    version = false,
     config = function()
+      require('mini.starter').setup()
       require('mini.notify').setup()
 
       -- Better Around/Inside textobjects
